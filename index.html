@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Geladinhos</title>
+</head>
+
+<body>
+    <div class="circulo"></div>
+    <img src="./src/logo.png" class="logo" alt="logo">
+
+    <div class="conteudo">
+        
+        <div class="caixa-texto">
+            <h1><span>Quer Sorvetes! Minha Sorveteria tem... </span> <br> Até atendimento Online Você Encontra aqui!!!
+            </h1>
+            <p>Tem Cardápio diversificado, O melhor preço da cidade; Um saborzinho de dar água na boca! </p>
+            <p> "Aproveite a oferta
+                do dia!" Vem prá cá conferir!!!</p>
+            <p> "Faz o seu pedido ONLINE que entregamos em sua casa..." </p>
+            <button> Chame aqui</button>
+
+            <button type="submit" class="submit-button">Ligue agora!</button>           
+                 
+              
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./src/celular.jpg" class="celular" height="300px">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="./src/celular.jpg" class="botao-menu" onclick="trocaImagem('./src/celular.jpg'); trocaCor('#fff')">
+        <img src="./src/sorvetes.png" class="botao-menu" onclick="trocaImagem('./src/sorvetes.png'); trocaCor('#52242D')">
+        <img src="./src/img3.png" class="botao-menu" onclick="trocaImagem('./src/img3.png'); trocaCor('#E647B1')">
+        <img src="./src/01-23.webp" class="botao-menu" onclick="trocaImagem('./src/01-23.webp'); trocaCor('#1F803D')">
+        <img src="./src/06-13.webp" class="botao-menu" onclick="trocaImagem('./src/06-13.webp'); trocaCor('#E06E70')">
+    </div> 
+</body>
+<script>
+let imagem = document.querySelector(".celular")
+let circulo = document.querySelector(".circulo")
+
+function trocaImagem(endereco){
+imagem.src = endereco
+}
+function trocaCor(cor){
+    circulo.style.background = cor
+}
+
+</script>
+
+</html>

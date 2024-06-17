@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.conteudo {
+    width: 100%; /*largura*/
+    display: flex; /*permite que alteremos a posião dos elementos na tela*/
+    justify-content: space-between; /*permite justificar / alinhar os componentes na horizontal*/
+    align-items: center; /*permite alinhar os componentes na vertical*/
+}
+
+.caixa-texto {
+width: 600;
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+    height: 200px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 70px;
+}
+
+.celular:hover {
+    transform: translateY(-10px);
+    width: 200px;
+    border-radius: 70px;
+}
+
+.botao-menu {
+    width: 90px;
+    height: 100px;
+    transition: 1s;
+    cursor: pointer;
+    margin: 10px;
+}
+.botao-menu:hover{
+    transform: translateY(-40px);
+}
+
+.circulo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:hsl(0, 0%, 100%);
+    top: 0;
+    left: 0;
+    clip-path: circle(550px at right 800px);
+    z-index: -1;
+}
+
+h1 {
+    color: rgb(67, 55, 117);
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+span {
+    color: rgb(220, 43, 155);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 15px;
+}
+
+button {
+    background: rgb(220, 43, 182); /*Fundo do elemento */
+    color: #fff; /*cor do texto*/
+    border-radius: 40px; /*arredondamento da borda*/
+    border: none; /*borda do elemento*/
+    cursor: pointer; /*cursor do mouse*/
+    padding: 10px; /*espaamento interno*/
+    margin-top: 20px; /**/
+}
